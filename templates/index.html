@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<title>TheBand</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/css/style.css">
+<link rel="stylesheet" href="../static/css/style2.css">
+<link rel="stylesheet" href="../static/css/style1.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+{% block bar %}
+{% endblock %}
+{% if display %}
+      <p>Random Number: {{list|random}}</p> 
+      <table>     
+      {% for number in list %}     
+      <tr>          
+      <td>{{number}}<td>
+      <tr>      
+      {% endfor %}
+      </table>
+{% endif %}
+
+
+<!-- Footer -->
+
+
+
+</body>
+</html>
