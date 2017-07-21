@@ -10,7 +10,7 @@ def hello():
 		name= form["Name"]
 		email= form["Email"]
 		message= form["Message"]
-		console.log name +"_"+ email +"_"+ message
+		print name +"_"+ email +"_"+ message
 		return render_template("bar.html")
 
 
